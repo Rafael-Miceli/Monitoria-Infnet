@@ -1,0 +1,24 @@
+﻿<div ng-controller="WorkshopsController">
+
+    <h2>Título</h2>
+    <h2>Workshops rolando</h2>
+
+    <a href="#">Criar um novo workshop</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Workshop</th>
+                <th>Quando vai rolar</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="workshop in workshops">
+                <td>{{workshop.name}}</td>
+                <td>{{workshop.date}}</td>
+                <td><a href="#inscrito">Quero me inscrever</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
