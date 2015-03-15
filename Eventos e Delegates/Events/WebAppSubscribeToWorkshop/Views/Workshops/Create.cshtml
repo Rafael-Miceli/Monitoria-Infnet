@@ -1,0 +1,24 @@
+﻿<div ng-controller="WorkshopsController">
+
+    <h2>Título</h2>
+    <h2>Criar Workshop</h2>
+
+    <form name="createWorkshop" ng-submit="create()">
+        <div>
+            <span>Nome</span>
+        </div>
+        <div>
+            <input type="text" required ng-model="name" />
+        </div>
+        <div>
+            <span>Data</span>
+        </div>
+        <div>
+            <input type="text" required ng-model="date" />
+        </div>
+        <div>
+            <input type="submit" value="Criar" />
+        </div>
+    </form>
+   
+</div>

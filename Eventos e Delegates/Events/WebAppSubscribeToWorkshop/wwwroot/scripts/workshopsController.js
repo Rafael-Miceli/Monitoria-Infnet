@@ -14,12 +14,20 @@
         };
 
 
-        $scope.loadWorkshops = function () {
+        loadWorkshops = function () {
             workshopService.getWorkshops().then(onWorkshopsComplete, onError);
         };
 
+        $scope.create = function () {
+            workshopService.createWorkshop($scope.name, $scope.date);
+        }
+
+        $scope.name;
+        $scope.date;
+
+        loadWorkshops();
     };
 
-    app.controller("WorkshopsController", WorkshopsController);
+    app.controller("WorkshopsController", WorkshopsController);    
 
 }());
