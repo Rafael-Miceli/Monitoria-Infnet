@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ConsoleAppEvents")]
+[assembly: AssemblyTitle("SubscribeToWorkshop.Domain")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ConsoleAppEvents")]
+[assembly: AssemblyProduct("SubscribeToWorkshop.Domain")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("880fb814-9cc2-47cb-8f60-932f7ee73b78")]
+[assembly: Guid("495b49d4-70fc-43d3-98f9-47a33d980455")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNet.Mvc;
 using System.Collections.Generic;
+using WebAppSubscribeToWorkshop.Models;
+
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,5 +30,15 @@ namespace WebAppSubscribeToWorkshop.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(Workshop workshop)
+        {
+            var result = workshop;
+
+            return View();
+        }
+
+
     }
 }

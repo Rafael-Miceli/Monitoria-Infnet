@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppEvents
+namespace SubscribeToWorkshop.Domain
 {
-    class Program
+    public interface CloudService<T>
     {
-        static void Main(string[] args)
-        {
-        }
+        void Add(T entity);
     }
 }

@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var workshopService = function ($http) {
+    var workshopService = function ($http, $location) {
 
         var getWorkshops = function () {
             return $http.get("http://localhost:59533/workshops/Listar")
@@ -9,8 +9,8 @@
                         });
         };
 
-        var createWorkshop = function(name, date) {
-            $http.post("http://localhost:59533/workshops/Cadastrar");
+        var createWorkshop = function(data) {
+            $http.post("/workshops/Create", data);
         };
 
         return {

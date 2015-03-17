@@ -18,8 +18,9 @@
             workshopService.getWorkshops().then(onWorkshopsComplete, onError);
         };
 
-        $scope.create = function () {
-            workshopService.createWorkshop($scope.name, $scope.date);
+        $scope.create = function (workshop) {           
+
+            workshopService.createWorkshop(workshop);
         }
 
         $scope.name;
